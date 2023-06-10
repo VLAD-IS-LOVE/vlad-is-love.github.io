@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ювелірний магазин</title>
+    <link rel="stylesheet" href="Home.css"/>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a class="home" href="Home.html">Головна</a></li>
+            <li><a href="Shop.html">Каталог </a></li>
+            <li><a href="About.html">О нас</a></li>
+            <li><a href="Contact.html">Контакти</a></li>
+            <li><a href="Registration.html">Реєстрація</a></li>
+        </ul>
+    </nav>
+    <div>
+        <a href="#" class="cart-icon">Кошик</a>
+    </div>
+</header>
+<main>
+    <div id="bannerContainer">
+        <img src="img/reklama.png" alt="Reklama">
+        <button id="closeBanner">Закрыть</button>
+    </div>
+    <section class="banner">
+        <h1>Ласкаво просимо до нашого ювелірного магазину</h1>
+        <p>Відкрийте для себе нашу чудову колекцію ювелірних прикрас</p>
+        <a href="Shop.html" class="btn">Купити зараз</a>
+    </section>
+
+    <section class="products">
+        <h2>Популярно зараз</h2>
+        <div class="product1">
+            <img src="img/akcia.png" alt="Product 1" />
+            <div class="product-details">
+                <h3>Ексклюзивно для інтернет магазину</h3>
+                <a href="Shop.html" class="btn">Додати до кошику</a>
+            </div>
+        </div>
+        <div class="product2">
+            <img class="pr2" src="img/gold1.png" alt="Product 2" />
+            <div class="product-details">
+                <h3>Золота каблучка з фіанітами</h3>
+                <p>Ціна: 12599 грн.</p>
+                <a href="Shop.html" class="btn">Додати до кошику</a>
+            </div>
+        </div>
+        <div class="product3">
+            <img src="img/sergi.jpg" alt="Product 3" />
+            <div class="product-details">
+                <h3>Сережки зі срібла 925 з гранатами, фіанітами</h3>
+                <p>Ціна: 4600 грн.</p>
+                <a href="Shop.html" class="btn">Додати до кошику</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 Jewelry Store. All Rights Reserved</p>
+</footer>
+<script>window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        document.getElementById('bannerContainer').style.display = 'block';
+    }, 5000);
+
+    document.getElementById('closeBanner').addEventListener('click', function() {
+        document.getElementById('bannerContainer').style.display = 'none';
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    background-color: #EF476F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
